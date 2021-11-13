@@ -1,0 +1,25 @@
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  z-index: 100000;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  transition: visibility 300ms, opacity 300ms;
+}
+.modal--open {
+  visibility: visible;
+  opacity: 1;
+}
+.modal__backdrop {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}

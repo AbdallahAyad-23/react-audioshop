@@ -1,0 +1,84 @@
+.summary {
+  background-color: white;
+  border-radius: var(--br);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1;
+}
+.right {
+  background-color: var(--orange);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.summary__message {
+  text-transform: uppercase;
+}
+.summary__email {
+  color: rgba(0, 0, 0, 0.5);
+}
+.summary__items {
+  display: flex;
+}
+.summary__list {
+  border-top-left-radius: var(--br);
+  border-bottom-left-radius: var(--br);
+  background-color: #f1f1f1;
+  padding: 15px 25px;
+  display: flex;
+  flex-direction: column;
+}
+.summary__total {
+  border-top-right-radius: var(--br);
+  border-bottom-right-radius: var(--br);
+  background-color: black;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+.summary__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+.summary__item > div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.item__quantity {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+}
+.item__left {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.item__left > div > p:nth-of-type(2) {
+  color: rgba(0, 0, 0, 0.5);
+}
+.item__img {
+  width: 70px;
+  border-radius: var(--br);
+}
+.showmore {
+  border: none;
+  background: none;
+  font-family: inherit;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.6);
+  align-self: center;
+}
+.showmore:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

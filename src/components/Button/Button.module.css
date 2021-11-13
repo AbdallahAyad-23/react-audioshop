@@ -1,0 +1,33 @@
+.btn {
+  color: var(--white);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 35px;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-family: inherit;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-align: center;
+}
+.btn--clear {
+  background: none;
+  color: black;
+  border: 1px solid black;
+}
+.btn--black {
+  background-color: black;
+}
+.btn--orange {
+  background-color: var(--orange);
+}
+.btn--orange:hover {
+  background-color: #ec884e;
+}
+.btn--black:hover {
+  background-color: rgb(43, 43, 43);
+}
+.btn--clear:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}

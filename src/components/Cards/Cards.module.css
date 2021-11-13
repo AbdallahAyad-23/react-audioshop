@@ -1,0 +1,14 @@
+.cards {
+  grid-area: cards;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+}

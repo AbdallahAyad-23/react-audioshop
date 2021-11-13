@@ -1,0 +1,44 @@
+.card {
+  background-color: #f1f1f1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 90px 10px 30px 10px;
+  border-radius: var(--br);
+}
+.card__img {
+  position: absolute;
+  object-fit: cover;
+  width: 160px;
+  height: 160px;
+  top: -70px;
+}
+.card__title {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
+}
+.card__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.card__btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.card__btn:hover {
+  color: var(--orange);
+}
+.link {
+  text-decoration: none;
+}

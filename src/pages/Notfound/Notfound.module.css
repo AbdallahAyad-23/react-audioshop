@@ -1,0 +1,17 @@
+.container {
+  padding-top: 80px;
+  height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+.container > div {
+  text-align: center;
+}
+.container h1 {
+  font-size: 8rem;
+}
+.container p {
+  font-size: 2rem;
+}

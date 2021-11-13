@@ -1,0 +1,44 @@
+.backdrop {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 9;
+  visibility: hidden;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: visibility 300ms, opacity 300ms;
+}
+.backdrop--show {
+  visibility: visible;
+  opacity: 1;
+}
+.sidebar {
+  position: fixed;
+  background-color: #fafafa;
+  top: 80px;
+  z-index: 10;
+  left: 0;
+  transform: translateX(-150px);
+  transition: transform 300ms;
+  bottom: 0;
+  padding: 10px 20px;
+}
+.sidebar--show {
+  transform: translateX(0);
+}
+
+.sidebar__item {
+  margin-bottom: 5px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.sidebar__link {
+  text-decoration: none;
+  color: black;
+}
+.sidebar__link:hover,
+.sidebar__link:active {
+  color: var(--orange);
+}

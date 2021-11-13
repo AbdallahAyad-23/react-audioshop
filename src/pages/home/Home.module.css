@@ -1,0 +1,165 @@
+.home {
+  margin-top: 80px;
+}
+.main {
+  padding: 100px 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "cards "
+    "speaker "
+    "zx7 "
+    "earphones "
+    "yx1 "
+    "end";
+  gap: 20px;
+}
+.cards {
+  grid-area: cards;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+.speaker {
+  grid-area: speaker;
+  margin-top: 60px;
+  padding: 50px;
+  width: 100%;
+  position: relative;
+  background-color: var(--orange);
+  border-radius: var(--br);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+  gap: 10px;
+}
+.speaker__info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.speaker__info > h1 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+.speaker__info > p {
+  font-size: 0.9rem;
+}
+
+.speaker::after {
+  background-image: url(../../assets/images/home/desktop/pattern-circles.svg);
+  background-size: cover;
+  background-position: center;
+  top: -20%;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.speaker__img {
+  width: 150px;
+  position: relative;
+}
+.zx7speaker {
+  grid-area: zx7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  border-radius: var(--br);
+}
+
+.zx7speaker__img {
+  position: relative;
+  width: 100%;
+  border-radius: var(--br);
+}
+.zx7speaker__info {
+  text-transform: uppercase;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: absolute;
+}
+.earphones {
+  grid-area: earphones;
+}
+
+.earphones {
+  width: 100%;
+  border-radius: var(--br);
+}
+
+.yx1 {
+  grid-area: yx1;
+  background-color: #f1f1f1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: var(--br);
+  gap: 30px;
+  padding: 60px 30px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "cards cards"
+      "speaker speaker"
+      "zx7 zx7"
+      "earphones yx1"
+      "end end";
+  }
+  .cards {
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .main {
+    padding: 100px 80px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "cards cards"
+      "speaker speaker"
+      "zx7 zx7"
+      "earphones yx1"
+      "end end";
+  }
+  .speaker {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .speaker::after {
+    left: -20%;
+    top: 0;
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position: 150px -50px;
+  }
+  .speaker__img {
+    width: 250px;
+    z-index: 1;
+  }
+  .speaker__info {
+    text-align: start;
+    z-index: 1;
+    align-items: flex-start;
+  }
+  .speaker__info > p {
+    max-width: 38ch;
+  }
+
+  .end__info {
+    text-align: start;
+  }
+}
