@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Img from "../Img/Img";
 import styles from "./Footer.module.css";
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
       <div className={styles.orangebar}></div>
 
       <NavLink to="/">
-        <img src="/images/shared/desktop/logo.svg" alt="logo" />
+        <Img src="/images/shared/desktop/logo.svg" alt="logo" />
       </NavLink>
       <ul className={styles.footer__list}>
         <li>
@@ -47,7 +48,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <Img
               src="/images/shared/desktop/icon-facebook.svg"
               alt="facebook"
             />
@@ -59,7 +60,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/images/shared/desktop/icon-twitter.svg" alt="twitter" />
+            <Img src="/images/shared/desktop/icon-twitter.svg" alt="twitter" />
           </a>
         </li>
         <li className={styles.footer__item}>
@@ -68,7 +69,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <Img
               src="/images/shared/desktop/icon-instagram.svg"
               alt="instagram"
             />

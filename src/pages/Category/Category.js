@@ -4,6 +4,7 @@ import Button from "../../components/Button/Button";
 import styles from "./Category.module.css";
 import End from "../../components/End/End";
 import { Context as ProductsContext } from "../../context/productContext";
+import Img from "../../components/Img/Img";
 const Category = ({ category }) => {
   const {
     state: { products },
@@ -34,7 +35,7 @@ const Category = ({ category }) => {
                     media="(min-width:576px)"
                     srcset={`/images${obj.image.mobile}`}
                   />
-                  <img
+                  <Img
                     src={`/images${obj.image.mobile}`}
                     className={styles.item__img}
                     alt={obj.name}

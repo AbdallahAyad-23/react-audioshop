@@ -4,6 +4,7 @@ import Input from "../../components/Input/Input";
 import Summary from "../../components/Summary/Summary";
 import useCart from "../../hooks/useCart";
 import { Context as CartContext } from "../../context/cartContext";
+import Img from "../../components/Img/Img";
 const Checkout = () => {
   const { removeAll } = useContext(CartContext);
   const [cartItems] = useCart();
@@ -236,7 +237,7 @@ const Checkout = () => {
             {cartItems.map((citem) => (
               <li className={styles.summary__item}>
                 <div className={styles.item__left}>
-                  <img
+                  <Img
                     src={`/images/cart/image-${citem.slug}.jpg`}
                     className={styles.item__img}
                     alt={citem.name}

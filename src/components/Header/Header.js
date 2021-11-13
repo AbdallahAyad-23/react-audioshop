@@ -4,6 +4,7 @@ import logo from "../../assets/images/shared/desktop/logo.svg";
 import cart from "../../assets/images/shared/desktop/cart.svg";
 import styles from "./Header.module.css";
 import { Context } from "../../context/cartContext";
+import Img from "../Img/Img";
 const Header = ({ setShow, show }) => {
   const { toggleCart, state } = useContext(Context);
   return (
@@ -45,7 +46,7 @@ const Header = ({ setShow, show }) => {
         </svg>
       )}
       <Link to="/" className={styles.header__logo}>
-        <img src={logo} alt="logo" />
+        <Img src={logo} alt="logo" />
       </Link>
       <ul className={styles.header__items}>
         <li>
@@ -103,7 +104,7 @@ const Header = ({ setShow, show }) => {
             {state.cart.reduce((acc, i) => acc + i.quantity, 0)}
           </p>
         ) : null}
-        <img
+        <Img
           src={cart}
           alt="cart"
           className={styles.header__cart}

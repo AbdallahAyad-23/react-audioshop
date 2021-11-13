@@ -3,6 +3,7 @@ import mobperson from "../../assets/images/shared/mobile/mobilegear.jpg";
 import tabperson from "../../assets/images/shared/tablet/tabgear.jpg";
 import desperson from "../../assets/images/shared/desktop/gearimage.jpg";
 import styles from "./End.module.css";
+import Img from "../Img/Img";
 const End = () => {
   return (
     <div className={styles.end}>
@@ -11,7 +12,7 @@ const End = () => {
           <source media="(min-width:992px)" srcset={desperson} />
           <source media="(min-width:768px)" srcset={tabperson} />
           <source media="(min-width:576px)" srcset={mobperson} />
-          <img className={styles.personpic} src={mobperson} alt="person" />
+          <Img className={styles.personpic} src={mobperson} alt="person" />
         </picture>
       </div>
       <div className={styles.end__info}>

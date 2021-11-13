@@ -1,0 +1,26 @@
+.img_container {
+  background-color: #202124;
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.square {
+  border-radius: 0;
+}
+
+.circle {
+  border-radius: 50%;
+}

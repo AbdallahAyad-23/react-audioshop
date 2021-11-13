@@ -15,6 +15,7 @@ import desearphones from "../../assets/images/home/desktop/earphones.jpg";
 import Button from "../../components/Button/Button";
 import Cards from "../../components/Cards/Cards";
 import End from "../../components/End/End";
+import Img from "../../components/Img/Img";
 
 const Home = () => {
   return (
@@ -27,7 +28,7 @@ const Home = () => {
             <source media="(min-width:992px)" srcset={desspeaker} />
             <source media="(min-width:768px)" srcset={tabspeaker} />
             <source media="(min-width:576px)" srcset={mobspeaker} />
-            <img
+            <Img
               src={mobspeaker}
               className={styles.speaker__img}
               alt="speaker"
@@ -55,7 +56,7 @@ const Home = () => {
             <source media="(min-width:992px)" srcset={deszx7} />
             <source media="(min-width:768px)" srcset={tabzx7} />
             <source media="(min-width:576px)" srcset={mobzx7} />
-            <img
+            <Img
               className={styles.zx7speaker__img}
               src={mobzx7}
               alt="zx7 speaker"
@@ -75,11 +76,10 @@ const Home = () => {
           <source media="(min-width:992px)" srcset={desearphones} />
           <source media="(min-width:768px)" srcset={tabearphones} />
           <source media="(min-width:576px)" srcset={mobearphones} />
-          <img
+          <Img
             className={styles.earphones}
             src={mobearphones}
             alt="earphones"
-            loading="lazy"
           />
         </picture>
         <div className={styles.yx1}>

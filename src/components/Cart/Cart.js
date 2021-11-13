@@ -4,6 +4,7 @@ import styles from "./Cart.module.css";
 import Modal from "../Modal/Modal";
 import { Context as CartContext } from "../../context/cartContext";
 import useCart from "../../hooks/useCart";
+import Img from "../Img/Img";
 const Cart = () => {
   const {
     state: { showCart },
@@ -17,7 +18,6 @@ const Cart = () => {
       <div className={styles.cart}>
         {cartItems.length ? (
           <>
-            {" "}
             <div className={styles.cart__header}>
               <h4>cart ({cartItems.length})</h4>
               <button onClick={removeAll}>Remove All</button>
@@ -27,7 +27,7 @@ const Cart = () => {
                 {cartItems.map((citem) => (
                   <li className={styles.cart__item} key={citem.id}>
                     <div className={styles.item__left}>
-                      <img
+                      <Img
                         src={`/images/cart/image-${citem.slug}.jpg`}
                         className={styles.item__img}
                         alt={citem.name}

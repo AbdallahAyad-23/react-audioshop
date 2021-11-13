@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import useCart from "../../hooks/useCart";
 import Button from "../Button/Button";
+import Img from "../Img/Img";
 import Modal from "../Modal/Modal";
 import styles from "./Summary.module.css";
 const Summary = ({ onClose, show }) => {
@@ -37,7 +38,7 @@ const Summary = ({ onClose, show }) => {
               !showAll ? (
                 <li className={styles.summary__item} key={cartItems[0].id}>
                   <div className={styles.item__left}>
-                    <img
+                    <Img
                       src={`/images/cart/image-${cartItems[0].slug}.jpg`}
                       className={styles.item__img}
                       alt={cartItems[0].name}
@@ -59,7 +60,7 @@ const Summary = ({ onClose, show }) => {
                 cartItems.map((citem) => (
                   <li className={styles.summary__item} key={citem.id}>
                     <div className={styles.item__left}>
-                      <img
+                      <Img
                         src={`/images/cart/image-${citem.slug}.jpg`}
                         className={styles.item__img}
                         alt={citem.name}

@@ -4,6 +4,7 @@ import Button from "../../components/Button/Button";
 import Cards from "../../components/Cards/Cards";
 import End from "../../components/End/End";
 import styles from "./Product.module.css";
+import Img from "../../components/Img/Img";
 import { Context as CartContext } from "../../context/cartContext";
 import { Context as ProductsContext } from "../../context/productContext";
 const Product = () => {
@@ -38,7 +39,7 @@ const Product = () => {
               media="(min-width:576px)"
               srcset={`/images${result.image.mobile}`}
             />
-            <img
+            <Img
               src={`/images${result.image.mobile}`}
               className={styles.item__img}
               alt={result.name}
@@ -106,7 +107,7 @@ const Product = () => {
                 media="(min-width:576px)"
                 srcset={`/images${im.mobile}`}
               />
-              <img
+              <Img
                 src={`/images${im.mobile}`}
                 alt={result.name}
                 className={styles.gallery__img}
@@ -132,7 +133,7 @@ const Product = () => {
                     media="(min-width:576px)"
                     srcset={`/images${o.image.mobile}`}
                   />
-                  <img
+                  <Img
                     src={`/images${o.image.mobile}`}
                     alt={o.name}
                     className={styles.maylike__img}
