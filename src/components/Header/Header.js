@@ -104,7 +104,7 @@ const Header = ({ setShow, show }) => {
             {state.cart.reduce((acc, i) => acc + i.quantity, 0)}
           </p>
         ) : null}
-        <Img
+        <img
           src={cart}
           alt="cart"
           className={styles.header__cart}

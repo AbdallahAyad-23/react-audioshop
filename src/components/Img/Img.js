@@ -1,6 +1,6 @@
 import { useRef, useEffect } from "react";
 
-const Img = ({ src, alt, className }) => {
+const Img = (props) => {
   const el = useRef(null);
 
   const preloadImage = (img) => {
@@ -22,7 +22,14 @@ const Img = ({ src, alt, className }) => {
     imgObserver.observe(el.current);
   }, []);
 
-  return <img ref={el} data-src={src} alt={alt} className={className} />;
+  return (
+    <img
+      ref={el}
+      data-src={props.src}
+      alt={props.alt}
+      className={props.className}
+    />
+  );
 };
 
 export default Img;
