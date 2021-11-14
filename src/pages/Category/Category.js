@@ -25,18 +25,26 @@ const Category = ({ category }) => {
                 <picture className={styles.item__imgcontainer}>
                   <source
                     media="(min-width:992px)"
-                    srcset={`/images${obj.image.desktop}`}
+                    srcSet={
+                      require(`../../assets/images${obj.image.desktop}`).default
+                    }
                   />
                   <source
                     media="(min-width:768px)"
-                    srcset={`/images${obj.image.tablet}`}
+                    srcset={
+                      require(`../../assets/images${obj.image.tablet}`).default
+                    }
                   />
                   <source
                     media="(min-width:576px)"
-                    srcset={`/images${obj.image.mobile}`}
+                    srcset={
+                      require(`../../assets/images${obj.image.mobile}`).default
+                    }
                   />
                   <Img
-                    src={`/images${obj.image.mobile}`}
+                    src={
+                      require(`../../assets/images${obj.image.mobile}`).default
+                    }
                     className={styles.item__img}
                     alt={obj.name}
                   />

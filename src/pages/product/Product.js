@@ -29,18 +29,24 @@ const Product = () => {
           <picture className={styles.item__imgcontainer}>
             <source
               media="(min-width:992px)"
-              srcset={`/images${result.image.desktop}`}
+              srcset={
+                require(`../../assets/images${result.image.desktop}`).default
+              }
             />
             <source
               media="(min-width:768px)"
-              srcset={`/images${result.image.tablet}`}
+              srcset={
+                require(`../../assets/images${result.image.tablet}`).default
+              }
             />
             <source
               media="(min-width:576px)"
-              srcset={`/images${result.image.mobile}`}
+              srcset={
+                require(`../../assets/images${result.image.mobile}`).default
+              }
             />
             <Img
-              src={`/images${result.image.mobile}`}
+              src={require(`../../assets/images${result.image.mobile}`).default}
               className={styles.item__img}
               alt={result.name}
             />
@@ -97,18 +103,18 @@ const Product = () => {
             <picture className={styles.gallery__img} key={im.item__description}>
               <source
                 media="(min-width:992px)"
-                srcset={`/images${im.desktop}`}
+                srcset={require(`../../assets/images${im.desktop}`).default}
               />
               <source
                 media="(min-width:768px)"
-                srcset={`/images${im.tablet}`}
+                srcset={require(`../../assets/images${im.tablet}`).default}
               />
               <source
                 media="(min-width:576px)"
-                srcset={`/images${im.mobile}`}
+                srcset={require(`../../assets/images${im.mobile}`).default}
               />
               <Img
-                src={`/images${im.mobile}`}
+                src={require(`../../assets/images${im.mobile}`).default}
                 alt={result.name}
                 className={styles.gallery__img}
               />
@@ -123,18 +129,26 @@ const Product = () => {
                 <picture className={styles.maylike__img}>
                   <source
                     media="(min-width:992px)"
-                    srcset={`/images${o.image.desktop}`}
+                    srcset={
+                      require(`../../assets/images${o.image.desktop}`).default
+                    }
                   />
                   <source
                     media="(min-width:768px)"
-                    srcset={`/images${o.image.tablet}`}
+                    srcset={
+                      require(`../../assets/images${o.image.tablet}`).default
+                    }
                   />
                   <source
                     media="(min-width:576px)"
-                    srcset={`/images${o.image.mobile}`}
+                    srcset={
+                      require(`../../assets/images${o.image.mobile}`).default
+                    }
                   />
                   <Img
-                    src={`/images${o.image.mobile}`}
+                    src={
+                      require(`../../assets/images${o.image.mobile}`).default
+                    }
                     alt={o.name}
                     className={styles.maylike__img}
                   />

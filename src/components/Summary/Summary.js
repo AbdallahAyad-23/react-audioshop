@@ -39,7 +39,10 @@ const Summary = ({ onClose, show }) => {
                 <li className={styles.summary__item} key={cartItems[0].id}>
                   <div className={styles.item__left}>
                     <Img
-                      src={`/images/cart/image-${cartItems[0].slug}.jpg`}
+                      src={
+                        require(`../../assets/images/cart/image-${cartItems[0].slug}.jpg`)
+                          .default
+                      }
                       className={styles.item__img}
                       alt={cartItems[0].name}
                     />
@@ -61,7 +64,10 @@ const Summary = ({ onClose, show }) => {
                   <li className={styles.summary__item} key={citem.id}>
                     <div className={styles.item__left}>
                       <Img
-                        src={`/images/cart/image-${citem.slug}.jpg`}
+                        src={
+                          require(`../../assets/images/cart/image-${citem.slug}.jpg`)
+                            .default
+                        }
                         className={styles.item__img}
                         alt={citem.name}
                       />

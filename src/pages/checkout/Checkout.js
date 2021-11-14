@@ -238,7 +238,10 @@ const Checkout = () => {
               <li className={styles.summary__item}>
                 <div className={styles.item__left}>
                   <Img
-                    src={`/images/cart/image-${citem.slug}.jpg`}
+                    src={
+                      require(`../../assets/images/cart/image-${citem.slug}.jpg`)
+                        .default
+                    }
                     className={styles.item__img}
                     alt={citem.name}
                   />

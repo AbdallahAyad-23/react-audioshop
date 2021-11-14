@@ -8,7 +8,10 @@ const Footer = () => {
       <div className={styles.orangebar}></div>
 
       <NavLink to="/">
-        <Img src="/images/shared/desktop/logo.svg" alt="logo" />
+        <Img
+          src={require("../../assets/images/shared/desktop/logo.svg").default}
+          alt="logo"
+        />
       </NavLink>
       <ul className={styles.footer__list}>
         <li>
@@ -49,7 +52,10 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
             <Img
-              src="/images/shared/desktop/icon-facebook.svg"
+              src={
+                require("../../assets/images/shared/desktop/icon-facebook.svg")
+                  .default
+              }
               alt="facebook"
             />
           </a>
@@ -60,7 +66,13 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Img src="/images/shared/desktop/icon-twitter.svg" alt="twitter" />
+            <Img
+              src={
+                require("../../assets/images/shared/desktop/icon-twitter.svg")
+                  .default
+              }
+              alt="twitter"
+            />
           </a>
         </li>
         <li className={styles.footer__item}>
@@ -70,7 +82,10 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
             <Img
-              src="/images/shared/desktop/icon-instagram.svg"
+              src={
+                require("../../assets/images/shared/desktop/icon-instagram.svg")
+                  .default
+              }
               alt="instagram"
             />
           </a>
